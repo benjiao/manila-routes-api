@@ -42,8 +42,7 @@ class Routes(Resource):
                 response_content.append({
                     'route_id': route.get('route_id'),
                     'name': route.get('route_long_name'),
-                    'agency_id': route.get('agency_id'),
-                    'trips': trips
+                    'agency_id': route.get('agency_id')
                 })
 
         return response_content
